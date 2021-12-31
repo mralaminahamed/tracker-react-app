@@ -1,0 +1,11 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript, javascriptreact, typescript, typescriptreact, json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "editor.formatOnSaveMode": "modificationsIfAvailable",
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+  }

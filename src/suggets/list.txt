@@ -1,0 +1,3 @@
+https://www.freecodecamp.org/news/how-to-deploy-react-router-based-app-to-netlify/
+https://dev.to/rajeshroyal/page-not-found-error-on-netlify-reactjs-react-router-solved-43oa
+https://answers.netlify.com/t/netlify-page-not-found-when-sharing-react-router-dom-based-links/11744

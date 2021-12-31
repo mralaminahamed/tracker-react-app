@@ -1,0 +1,22 @@
+[
+	{
+		"number": "0",
+		"title": "Home",
+		"url": "/"
+	},
+	{
+		"number": "1",
+		"title": "About",
+		"url": "/about"
+	},
+	{
+		"number": "2",
+		"title": "Products",
+		"url": "/products"
+	},
+	{
+		"number": "3",
+		"title": "Services",
+		"url": "/services"
+	}
+]

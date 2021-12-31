@@ -1,0 +1,29 @@
+@import "./psudo.scss";
+@import "./elements";
+
+/* add dependencies for componenet base design */
+@import "./header-area.scss";
+@import "./footer-area.scss";
+
+/* add responsive stylesheets for all components */
+@import "./responsive/header-area.scss";
+
+
+.container {
+  max-width: 1366px;
+  width: inherit;
+  height: inherit;
+}
+
+
+.MenuArea ul, .navigation, .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+main .container {
+  padding-top: 50px;
+}

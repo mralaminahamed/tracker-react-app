@@ -1,0 +1,55 @@
+/* for mobile s size */
+@media screen and (max-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+/* for mobile l size */
+@media screen and (max-width: 425px) {
+  .MenuArea ul {
+    display: none !important;
+  }
+  .MenuArea .humberger-icon {
+    display: block;
+  }
+
+
+  header {
+    width: 95%;
+  }
+}
+
+
+/* for tablet size */
+@media screen and (max-width: 768px) {
+  header {
+    height: 70px;
+  }
+
+  .BrandArea {
+    padding: 10px 0;
+  }
+
+  .MenuArea ul a, .MenuArea ul li a {
+    padding: 23px 15px;
+  }
+}
+
+/* for laptop size */
+@media screen and (max-width: 1024px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+/* for desktop s size */
+@media screen and (max-width: 1280px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+

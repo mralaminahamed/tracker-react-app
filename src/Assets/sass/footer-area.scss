@@ -1,0 +1,10 @@
+
+footer {
+    text-align: center;
+    /* added brand color */
+    background-color: rgba(#0577cc, 1.0);
+}
+
+footer, .footer * {  
+    color: var(--fallback-text-color);
+}
