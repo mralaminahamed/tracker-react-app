@@ -2,6 +2,8 @@ import { api_configs } from "../configs/api";
 import { sendRequest } from "../includes/request";
 import { update_title } from "../includes/utilities";
 
+// https://www.geeksforgeeks.org/how-to-pass-data-from-child-component-to-its-parent-in-reactjs/
+
 export default function Login() {
     update_title("Log in");
 
