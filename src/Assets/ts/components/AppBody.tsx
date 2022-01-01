@@ -1,5 +1,5 @@
 /* external deps */
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 /* internal deps */
 import Home from "../pages/Home";
