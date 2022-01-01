@@ -1,5 +1,6 @@
 // external deps
 import { useEffect, useState } from "react";
+import { api_configs } from "../configs/api";
 
 // internal deps
 import { sendRequest } from "../includes/request";
@@ -11,8 +12,8 @@ export default function Diviflash() {
 
     useEffect(() => {
         update_title("DiviFlash");
-        sendRequest({ method: "get", url: "https://www.mishusoft.com/api/tools/ipinfo", async: true }, setIpinfo);
-        sendRequest({ method: "get", url: "https://www.mishusoft.com/api/tools/browser", async: true }, setBrowserInfo);
+        sendRequest({ method: "get", url: api_configs.url + "tools/ipinfo", async: true }, setIpinfo);
+        sendRequest({ method: "get", url: api_configs.url + "tools/browser", async: true }, setBrowserInfo);
     }, []);
 
     return (

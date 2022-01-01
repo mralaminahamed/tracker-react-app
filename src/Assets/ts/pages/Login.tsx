@@ -1,3 +1,4 @@
+import { api_configs } from "../configs/api";
 import { sendRequest } from "../includes/request";
 import { update_title } from "../includes/utilities";
 
@@ -23,8 +24,8 @@ export default function Login() {
                             e.preventDefault();
                             sendRequest(
                                 {
-                                    url: "https://www.mishusoft.com/api/db/create",
-                                    method: "get",
+                                    url: api_configs.url + "db/create",
+                                    method: api_configs.request_method_default,
                                     async: true,
                                     data: {
                                         db: "echoa-tracker",
