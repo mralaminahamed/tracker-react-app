@@ -68,22 +68,11 @@ main .container {
 }
 
 .not-found {
-  width: 80%;
-    max-width: 1200
-px
-;
-    padding: 40
-px
- 0
-px
-;
+    width: 80%;
+    max-width: 1200px;
+    padding: 40px 0;
     text-align: center;
     background-color: var(--fallback-text-color);
-    border-radius: 5
-px
-;
-    border: 1
-px
- solid #eeeeee;
-}
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
 }
