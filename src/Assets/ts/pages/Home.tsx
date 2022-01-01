@@ -5,7 +5,7 @@ export default function Home() {
 
 	return (
         <div className="container-special">
-            <h1>Welcome to Issue Tracker for EchoaSoft Projects</h1>
+            <h1>Issue Tracker for EchoaSoft Projects</h1>
             <p>Realtime application for tracking issues</p>
         </div>
 	);
