@@ -3,9 +3,9 @@ import {BrowserRouter} from "react-router-dom";
 
 /* internal deps */
 import "../sass/App.scss";
-import Navigation from "./Components/Navitgation";
-import Container from "./Components/AppBody";
-import Footer from "./Components/Footer";
+import Navigation from "./components/Navitgation";
+import Container from "./components/AppBody";
+import Footer from "./components/Footer";
 
 function App() {
     return (

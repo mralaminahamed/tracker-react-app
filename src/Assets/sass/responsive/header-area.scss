@@ -39,8 +39,7 @@
 /* for laptop size */
 @media screen and (max-width: 1024px) {
   header {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 30px;
   }
 }
 
@@ -48,8 +47,7 @@
 /* for desktop s size */
 @media screen and (max-width: 1280px) {
   header {
-    padding-left: 20px;
-    padding-right: 20px;
+      padding: 0 30px;
   }
 }
 

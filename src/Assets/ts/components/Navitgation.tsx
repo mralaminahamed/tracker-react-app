@@ -1,6 +1,9 @@
+/*external deps*/
 import { Link } from "react-router-dom";
 
-import routes from "../../../routes.json";
+/*internal deps*/
+import Logo from "../../images/echoasoft-logo-187x43-1.png"
+import routes from "../configs/routes";
 
 export default function Navigation() {
 	return (
@@ -8,16 +11,15 @@ export default function Navigation() {
 			<nav className="container navigation">
 				<section className="BrandArea">
 					<Link to="/">
-						{/* <img
-							src="https://www.mishusoft.com/favicon.ico"
+						 <img
+							src={Logo}
 							alt="logo"
-						/> */}
-						Anatomy
+						/>
 					</Link>
 				</section>
 				<section className="MenuArea">
 					<ul>
-						{routes.map((route) => (
+						{routes().map((route) => (
 							<li key={route.number}>
 								<Link to={`${route.url}`} key={route.number}>
 									{route.title}

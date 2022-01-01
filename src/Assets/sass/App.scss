@@ -1,29 +1,89 @@
 @import "./psudo.scss";
 @import "./elements";
 
-/* add dependencies for componenet base design */
+/* add dependencies for component base design */
 @import "./header-area.scss";
 @import "./footer-area.scss";
+
+/* add dependencies for page wise */
+@import "./pages/home";
 
 /* add responsive stylesheets for all components */
 @import "./responsive/header-area.scss";
 
 
 .container {
-  max-width: 1366px;
-  width: inherit;
-  height: inherit;
+    max-width: 1366px;
+    width: inherit;
+    height: inherit
 }
 
 
 .MenuArea ul, .navigation, .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
+main {
+    width: 100%;
+
+    min-height: calc(100vh - calc(var(--header-height) + var(--footer-height)));
+    height: auto;
+
+    margin: 0 auto;
+}
 
 main .container {
-  padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 50px;
+}
+
+.container-special {
+    width: 100%;
+    max-width: 1200px;
+
+    padding: 80px 60px;
+
+    text-align: center;
+
+    background-color: var(--fallback-text-color);
+
+    & h1 {
+        font-size: 32px;
+        font-weight: 700;
+
+        margin-bottom: 30px;
+    }
+
+    & p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.not-found {
+  width: 80%;
+    max-width: 1200
+px
+;
+    padding: 40
+px
+ 0
+px
+;
+    text-align: center;
+    background-color: var(--fallback-text-color);
+    border-radius: 5
+px
+;
+    border: 1
+px
+ solid #eeeeee;
+}
 }
