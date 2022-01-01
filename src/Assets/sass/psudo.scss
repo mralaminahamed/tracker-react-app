@@ -11,6 +11,8 @@
     box-sizing: border-box;
     clear: both;
 
+    outline: none;
+
     //transition: ease 300ms;
 }
 
@@ -26,9 +28,10 @@
 
     /* colors */
     --header-bg-color: #FFF;
-    --header-bg-border-color: #eeeeee;
+    --default-bg-border-color: #eeeeee;
     --footer-bg-color:#eeeeee;
     --menu-text-color: #666666;
+    --menu-link-focus-color: #31507D;
     --menu-link-active-color: #0170B9;
     --body-bg-color: #f5f5f5;
     --brand-color: #0577cc;

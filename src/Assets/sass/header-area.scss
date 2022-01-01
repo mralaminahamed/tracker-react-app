@@ -4,7 +4,7 @@ header {
     height: 74px;
 
     background-color: var(--header-bg-color);
-    border-bottom: 1px solid var(--header-bg-border-color);
+    border-bottom: 1px solid var(--default-bg-border-color);
     //box-shadow: 0 16px 27px -9px rgb(0 0 0 / 2%);
 }
 
@@ -62,7 +62,7 @@ header {
             text-transform: capitalize;
 
             &:hover, &:active, &:focus {
-                color: var(--menu-text-color);
+                color: var(--menu-link-focus-color);
             }
         }
 
