@@ -5,9 +5,9 @@ export default function NotFound() {
     update_title('Not found')
 
     return (
-        <div className="container-special">
+        <div className="not-found">
             <h1>Content not found</h1>
-            <p>Please try again. </p>
+            <p>Please try again.</p>
         </div>
     );
 }

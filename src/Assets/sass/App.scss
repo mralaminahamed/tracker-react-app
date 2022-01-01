@@ -46,33 +46,37 @@ main .container {
 
 .container-special {
     width: 100%;
-    max-width: 1200px;
 
-    padding: 80px 60px;
+    & h1 {
+        margin-bottom: 30px;
+    }
+}
+
+.not-found {
+    width: 80%;
+
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+
+    & h1 {
+        margin-bottom: 20px;
+    }
+}
+
+.container-special, .not-found {
+    max-width: 1200px;
+    padding: 40px 0;
 
     text-align: center;
-
     background-color: var(--fallback-text-color);
 
     & h1 {
         font-size: 32px;
         font-weight: 700;
-
-        margin-bottom: 30px;
     }
 
     & p {
         font-size: 18px;
         font-weight: 400;
     }
-}
-
-.not-found {
-    width: 80%;
-    max-width: 1200px;
-    padding: 40px 0;
-    text-align: center;
-    background-color: var(--fallback-text-color);
-    border-radius: 5px;
-    border: 1px solid #eeeeee;
 }
