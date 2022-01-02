@@ -36,7 +36,18 @@ export default function Login() {
                                     },
                                 },
                                 function (data) {
-                                    console.log(data);
+                                    
+                                    try {
+                                        let response = JSON.parse(data);
+                                        console.log(response);
+
+                                        if (response.message.type === "error") {
+                                            alert(response.message.details);
+                                        }
+                                    } catch (e) {
+                                        console.log(data);
+                                    }
+                                    
                                 }
                             );
                             console.log(e);
