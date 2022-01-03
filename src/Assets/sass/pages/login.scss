@@ -59,7 +59,7 @@
 
         & input[type=text], & input[type=password] {
             width: 70%;
-            padding: 15px 20px;
+            padding: 10px 20px;
             background-color: var(--body-bg-color);
             border: 1px solid var(--default-bg-border-color);
             border-radius: 5px;
@@ -83,7 +83,7 @@
         width: 60%;
         margin: 20px auto;
 
-        & imput {
+        & input {
             margin-right: 20px;
 
             &:last-child {
@@ -106,7 +106,7 @@
             border-radius: 5px;
             box-shadow: 0 8px 15px 0 var(--default-bg-border-color);
 
-            background-color: linear-gradient(180deg,#f2f5ff 0%,#f2f5ff 100%);
+            background: linear-gradient(180deg, #f2f5ff 0%, #f2f5ff 100%);
         }
 
         & input[type=submit] {
