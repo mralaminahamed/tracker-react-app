@@ -1,6 +1,7 @@
 import { api_configs } from "../configs/api";
 import { sendRequest } from "../includes/request";
 import { update_title } from "../includes/utilities";
+import { databaseConfigs } from "../configs/database";
 
 // https://www.geeksforgeeks.org/how-to-pass-data-from-child-component-to-its-parent-in-reactjs/
 
@@ -29,10 +30,13 @@ export default function Login() {
                                     url: api_configs.url + "db/create",
                                     method: api_configs.request_method_default,
                                     async: true,
+                                    header: [{ "Content-type": "application/json; charset=utf-8" }],
                                     data: {
-                                        db: "echoa-tracker",
-                                        user: "echoa",
-                                        password: "echoa",
+                                        db: databaseConfigs.name,
+                                        user: databaseConfigs.user,
+                                        password: databaseConfigs.password,
+                                        required: "table",
+                                        table: databaseConfigs.tables,
                                     },
                                 },
                                 function (data) {

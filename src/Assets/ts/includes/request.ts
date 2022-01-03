@@ -1,3 +1,5 @@
+import { IsJsonString } from "./validation";
+
 export function sendRequest(options: { method: string; url: string; async: boolean; header?: any[]; data?: any }, callback?: (arg0: string) => void, fallback?: (arg0: Error) => void) {
     let dataType = "unrecognized";
 
@@ -6,6 +8,7 @@ export function sendRequest(options: { method: string; url: string; async: boole
             if (typeof XMLHttpRequest !== "undefined") {
                 let request = new XMLHttpRequest();
                 request.open(options.method, options.url, options.async);
+
                 //set header for xhr request
                 if (options.header !== undefined && typeof options.header == "object") {
                     options.header.forEach((item) => {
@@ -21,7 +24,6 @@ export function sendRequest(options: { method: string; url: string; async: boole
                         });
                     });
                 }
-
                 //send data with xhr request
                 if (dataType !== "unrecognized") {
                     if (options.data !== undefined && typeof options.data == "object") {
@@ -39,10 +41,15 @@ export function sendRequest(options: { method: string; url: string; async: boole
                         }
                     }
                 } else {
-                    request.send();
+                    if (IsJsonString(options.data) || typeof options.data === "object") {
+                        request.setRequestHeader("Content-type", "application/json; charset=utf-8");
+                        request.send(JSON.stringify(options.data));
+                    } else {
+                        request.send();
+                    }
                 }
 
-                //catch sate of xhr
+                //catch state of xhr
                 request.onreadystatechange = function () {
                     if (this.readyState === 4) {
                         if (this.status === 0) {
