@@ -23,7 +23,7 @@ export function isNumber(n: any) {
 /**
  * @param string string
  * */
-export function IsJsonString(string: string) {
+export function IsJsonString(string: string): boolean {
     try {
         JSON.parse(string);
     } catch (e) {
@@ -32,3 +32,18 @@ export function IsJsonString(string: string) {
     return true;
 }
 
+export function isJSON(content: string | object): boolean {
+    try {
+        if (typeof content === "object" && !Array.isArray(content)) {
+            return true;
+        } else {
+            if (typeof content === "string") {
+                var json = JSON.parse(content);
+                return typeof json === "object";
+            }
+        }
+    } catch (e) {
+        return false;
+    }
+    return true;
+}

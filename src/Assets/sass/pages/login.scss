@@ -8,14 +8,14 @@
     align-items: center;
 
     margin-top: 10vh;
-    padding: 30px 20px;
+    padding: 80px 50px;
 
     border: 1px solid var(--default-bg-border-color);
-    border-radius: 15px;
+    border-radius: 8px;
 
-    &:focus, &:hover {
-        box-shadow: 0 8px 15px 0 var(--default-bg-border-color);
-    }
+    // &:focus, &:hover {
+    //     box-shadow: 4px 18px 24px 0 rgba(#213643, 0.5);
+    // }
 
     & h1, & label, & .button-group {
         margin-top: 30px;
@@ -30,15 +30,15 @@
 
 
     & h1 {
-        font-size: 20px;
-        color: var(--menu-link-focus-color);
+        font-size: 24px;
+        color: #082057;
         margin-top: 0;
     }
 
 
     & h2 {
-        font-size: 13px;
-        color: rgba(#31507D, 0.5);
+        font-size: 14px;
+        color: rgba(#082057, 0.5);
         margin-top: 10px;
         font-weight: 400;
     }
@@ -58,29 +58,32 @@
         font-weight: 400;
 
         & input[type=text], & input[type=password] {
-            width: 70%;
-            padding: 10px 20px;
-            background-color: var(--body-bg-color);
-            border: 1px solid var(--default-bg-border-color);
-            border-radius: 5px;
+            width: 100%;
+            padding: 15px 20px;
+
+            background-color: #FDFCFF;
+
+            border: 0.8px solid #D5DAE2;
+            border-radius: 8px;
             
             font-family: var(--font-family-sans-serif);
             font-size: 16px;
 
             &:focus, &:active, &:hover, &:active, &:focus-within, &:focus-visible {
-                border: 1px solid var(--default-bg-border-color);
+                border: 0.8px solid #D5DAE2;
             }
 
             &::placeholder {
-                font-size: 14px;
+                font-size: 16px;
                 font-weight: 400;
-                color: var(--menu-link-focus-color);
+                color: #52525C;
+                opacity: 0.64;
             }
         }
     }
 
     & .button-group {
-        width: 60%;
+        width: 70%;
         margin: 20px auto;
 
         & input {
@@ -92,7 +95,7 @@
         }
 
         & input[type=submit], & input[type=reset]{
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 500;
             text-align: center;
             text-transform: capitalize;
@@ -100,13 +103,13 @@
             color: var(--fallback-text-color);
             cursor: pointer;
 
-            padding: 10px 35px;
+            padding: 10px 50px;
 
             border: 1px solid var(--default-bg-border-color);
             border-radius: 5px;
-            box-shadow: 0 8px 15px 0 var(--default-bg-border-color);
+            box-shadow: 2px 8px 24px 0 var(--default-bg-border-color);
 
-            background: linear-gradient(180deg, #f2f5ff 0%, #f2f5ff 100%);
+            // background: linear-gradient(180deg, #f2f5ff 0%, #f2f5ff 100%);
         }
 
         & input[type=submit] {

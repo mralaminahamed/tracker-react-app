@@ -30,7 +30,7 @@ export default function Login() {
                                     url: api_configs.url + "db/create",
                                     method: api_configs.request_method_default,
                                     async: true,
-                                    header: [{ "Content-type": "application/json; charset=utf-8" }],
+                                    header: api_configs.request_content_type_default,
                                     data: {
                                         db: databaseConfigs.name,
                                         user: databaseConfigs.user,
@@ -40,7 +40,6 @@ export default function Login() {
                                     },
                                 },
                                 function (data) {
-                                    
                                     try {
                                         let response = JSON.parse(data);
                                         console.log(response);
@@ -51,7 +50,6 @@ export default function Login() {
                                     } catch (e) {
                                         console.log(data);
                                     }
-                                    
                                 }
                             );
                             console.log(e);
