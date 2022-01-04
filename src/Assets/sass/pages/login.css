@@ -1,0 +1,92 @@
+.log-in {
+  width: 500px;
+  min-height: 250px;
+  background-color: var(--fallback-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+  padding: 80px 50px;
+  border: 1px solid var(--default-bg-border-color);
+  border-radius: 8px;
+}
+.log-in h1, .log-in label, .log-in .button-group {
+  margin-top: 30px;
+}
+.log-in h1, .log-in form {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.log-in h1 {
+  font-size: 24px;
+  color: #082057;
+  margin-top: 0;
+}
+.log-in h2 {
+  font-size: 14px;
+  color: rgba(8, 32, 87, 0.5);
+  margin-top: 10px;
+  font-weight: 400;
+}
+.log-in label, .log-in .button-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.log-in label {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.log-in label input[type=text], .log-in label input[type=password] {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #FDFCFF;
+  border: 0.8px solid #D5DAE2;
+  border-radius: 8px;
+  font-family: var(--font-family-sans-serif);
+  font-size: 16px;
+}
+.log-in label input[type=text]:focus, .log-in label input[type=text]:active, .log-in label input[type=text]:hover, .log-in label input[type=text]:active, .log-in label input[type=text]:focus-within, .log-in label input[type=text]:focus-visible, .log-in label input[type=password]:focus, .log-in label input[type=password]:active, .log-in label input[type=password]:hover, .log-in label input[type=password]:active, .log-in label input[type=password]:focus-within, .log-in label input[type=password]:focus-visible {
+  border: 0.8px solid #D5DAE2;
+}
+.log-in label input[type=text]::placeholder, .log-in label input[type=password]::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #52525C;
+  opacity: 0.64;
+}
+.log-in .button-group {
+  width: 70%;
+  margin: 20px auto;
+}
+.log-in .button-group input {
+  margin-right: 20px;
+}
+.log-in .button-group input:last-child {
+  margin-right: 0;
+}
+.log-in .button-group input[type=submit], .log-in .button-group input[type=reset] {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--fallback-text-color);
+  cursor: pointer;
+  padding: 10px 50px;
+  border: 1px solid var(--default-bg-border-color);
+  border-radius: 5px;
+  box-shadow: 2px 8px 24px 0 var(--default-bg-border-color);
+}
+.log-in .button-group input[type=submit] {
+  background-color: #277FFE;
+}
+.log-in .button-group input[type=reset] {
+  color: #000;
+  background-color: #FDD663;
+}
+
+/*# sourceMappingURL=login.css.map */
